@@ -10,7 +10,7 @@
 ## JS
 1. [从浏览器地址栏输入 url 到显示页面的步骤](./md/从浏览器地址栏输入%20url%20到显示页面的步骤.md)
 2. [Promise 相关](./code/Promise.js)
-3. 
+3. [Event Emitter](./code/EventEmitter.js)
 4. [JS实现继承](./md/JS实现继承.md)
 5. [String 相关](./code/String)
    1. [给定一个模板和一个对象，利用对象中的数据渲染模板，并返回最终结果。](./code/String/renderTemplate.js)
