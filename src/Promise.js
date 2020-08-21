@@ -33,3 +33,18 @@ function promiseAll(promises) {
 // }).catch(err => {
 //   debugger
 // })
+
+// Promise Race
+function promiseRace(promises) {
+  return new Promise((resolve, reject) => {
+    for (let i = 0; i < promises.length; i++) {
+      promises[i].then(resolve, reject)
+    }
+  })
+}
+
+// promiseRace([promise1, promise2, promise3]).then(res => {
+//   debugger
+// }).catch(err => {
+//   debugger
+// })
