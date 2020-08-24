@@ -14,3 +14,7 @@
 4. [JS实现继承](./md/JS实现继承.md)
 5. [String 相关](./code/String)
    1. [给定一个模板和一个对象，利用对象中的数据渲染模板，并返回最终结果。](./code/String/renderTemplate.js)
+6. [排序相关](./code/Sort)
+   1. [冒泡排序](./code/Sort/bubbleSort.js)
+   2. [选择排序](./code/Sort/selectionSort.js)
+   3. [插入排序](./code/Sort/insertionSort.js)
