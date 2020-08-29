@@ -14,12 +14,13 @@
 4. [JS实现继承](./md/JS实现继承.md)
 5. [String 相关](./code/String)
    1. [给定一个模板和一个对象，利用对象中的数据渲染模板，并返回最终结果。](./code/String/renderTemplate.js)
-6. [排序相关](./code/Sort)![](./img/sort.png)
+6. [项目优化方案](./md/项目优化.md)
+7. [排序相关](./code/Sort)![](./img/sort.png)
    1. [冒泡排序](./code/Sort/bubbleSort.js)
    2. [选择排序](./code/Sort/selectionSort.js)
    3. [插入排序](./code/Sort/insertionSort.js)
    4. [快速排序](./code/Sort/quickSort.js)
-7. 隐式类型转换 == 的5条规则[例题](./md/==.md)
+8. 隐式类型转换 == 的5条规则[例题](./md/==.md)
    1. NaN和其他任何类型比较永远返回false（包括和他自己）
    2. Boolean 和其他任何类型比较，Boolean 首先被转换为 Number 类型。
    3. String和Number比较，先将String转换为Number类型。
