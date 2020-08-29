@@ -1,3 +1,24 @@
+/** 3
+ * @description 求斐波那契数列第n项
+ * @param {number} n 项目数
+ * @return {number} 返回第n项值
+ */
+// function fibonacci(n) {
+//   if (n === 0 || n === 1) {
+//     return n
+//   }
+//   return fibonacci(n - 1) + fibonacci(n - 2)
+// }
+
+// function fibonacci(n, map = {}) {
+//   if (n == 1 || n == 2) return 1;
+//   if (map[n]) return map[n];
+//   let data = fibonacci(n - 1, map) + fibonacci(n - 2, map)
+//   map[n] = data
+//   return data
+// }
+
+// console.log(fibonacci(4))
 // 2 合并二维有序数组成一维有序数组，归并排序的思路
 
 
