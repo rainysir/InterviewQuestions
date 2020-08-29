@@ -1,3 +1,28 @@
+/** 4
+ * @description 字符串出现的不重复最长长度
+ * @param {string} s
+ * @return {number}
+ */
+// function lengthOfLongestStr(str) {
+//   let max = 0
+//   let time = 0
+//   let map = {}
+//   const len = str.length
+//   for (let i = 0; i < len; i++) {
+//     if (map[str[i]]) {
+//       if (time > max) {
+//         max = time
+//       }
+//       map = {}
+//       time = 0
+//     }
+//     ++time
+//     map[str[i]] = 1
+//   }
+  
+//   return max > time ? max : time
+// }
+// console.log(lengthOfLongestStr('abcdegfaabced'))
 /** 3
  * @description 求斐波那契数列第n项
  * @param {number} n 项目数
