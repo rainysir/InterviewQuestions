@@ -35,3 +35,4 @@
         1.  keep-alive 使用 name 做缓存过滤
         2.  递归组件用 name 调用自身
         3.  vue-devtools 展示名字
+    2.  [Vue 为什么要用 vm.$set() 解决对象新增属性不能响应的问题 ？你能说说如下代码的实现原理么？](./md/Vue.$set.md)
