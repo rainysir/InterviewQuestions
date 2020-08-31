@@ -1,3 +1,23 @@
+var a = function () {}
+function b() {
+  return a
+}
+var c = new b()
+console.log(c instanceof Function)
+/** 8
+ * 打印结果
+ */
+// function side(arr) {
+//   arr[0] = arr[2];
+// }
+// function a(a, b, c = 3) {
+//   debugger
+//   c = 10;
+//   console.log(arguments);
+//   side(arguments);  // 这里 a，c的值不管怎么改变都是不会改变的
+//   return a + b + c;
+// }
+// a(1, 1, 1)
 /**
  * 7
  * @description 非固定参数 柯里化

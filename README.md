@@ -29,4 +29,9 @@
 9. [webpack优化](./md/webpack做过哪些优化.md)
 10. [Event Loop Node和浏览器差异](./md/EventLoop.md)
 12. React
-    1. [Fiber](./md/Fiber.md)
+    1.  [Fiber](./md/Fiber.md)
+13. Vue
+    1.  vue name 作用
+        1.  keep-alive 使用 name 做缓存过滤
+        2.  递归组件用 name 调用自身
+        3.  vue-devtools 展示名字
