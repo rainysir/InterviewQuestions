@@ -10,7 +10,7 @@
 ## JS
 1. [从浏览器地址栏输入 url 到显示页面的步骤](./md/从浏览器地址栏输入%20url%20到显示页面的步骤.md)
 2. [Promise 相关](./code/Promise.js)
-3. [Event Emitter](./code/EventEmitter.js)
+3. [发布订阅 Event Emitter](./code/EventEmitter.js)
 4. [JS实现继承](./md/JS实现继承.md)
 5. [String 相关](./code/String)
    1. [给定一个模板和一个对象，利用对象中的数据渲染模板，并返回最终结果。](./code/String/renderTemplate.js)
@@ -28,5 +28,5 @@
    5. 原始类型和引用类型做比较时，引用类型会依照ToPrimitive规则转换为原始类型。
 9. [webpack优化](./md/webpack做过哪些优化.md)
 10. [Event Loop Node和浏览器差异](./md/EventLoop.md)
-11. React
+12. React
     1. [Fiber](./md/Fiber.md)
