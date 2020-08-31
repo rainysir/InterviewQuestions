@@ -1,17 +1,17 @@
 /**
  * 6
- * @description add(1,2,3) 函数柯里化
+ * @description add(1,2,3) 函数柯里化 实现 add(1)(2)(3) add(1, 2)(3)
  * @param {Function} fn
  */
-function add(a, b, c) {
-  return a + b + c
-}
-function curry(fn) {
-  return function inner(...args) {
-    return args.length === fn.length ? fn(...args) : (...innerArgs) => inner(...args, ...innerArgs)
-  }
-}
-const curryAdd = curry(add)
+// function add(a, b, c) {
+//   return a + b + c
+// }
+// function curry(fn) {
+//   return function inner(...args) {
+//     return args.length === fn.length ? fn(...args) : (...innerArgs) => inner(...args, ...innerArgs)
+//   }
+// }
+// const curryAdd = curry(add)
 /** 5
  * @description 有一堆整数，请把他们分成三份，确保每一份和尽量相等（11，42，23，4，5，6 4 5 6 11 23 42 56 78 90
  * @param {Array} arr
