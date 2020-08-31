@@ -1,4 +1,29 @@
 /**
+ * 7
+ * @description 非固定参数 柯里化
+ */
+// function add(...args) {
+//   return args.reduce((a, b) => a + b)
+// }
+// function curry(fn) {
+//   let args = []
+//   return function judge(...innerArgs) {
+//     if (innerArgs.length) {
+//       args = [
+//         ...args,
+//         ...innerArgs,
+//       ]
+//       return judge
+//     } else {
+//       const val = fn.apply(this, args)
+//       args = []
+//       return val
+//     }
+//   }
+// }
+// const curryAdd = curry(add)
+// console.log(curryAdd(1,2,3,4)())
+/**
  * 6
  * @description add(1,2,3) 函数柯里化 实现 add(1)(2)(3) add(1, 2)(3)
  * @param {Function} fn
