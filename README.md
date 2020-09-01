@@ -25,7 +25,7 @@
 1. 标准盒模型和怪异盒模型
    w3c标准盒模型: box-sizing: content-box盒子高度仅由content 宽高决定，不包含padding/border/margin
    IE盒魔性: box-sizing: border-box盒子高度包含 padding/border (常用)
-2. 
+2. [浏览器重绘和回流](./md/浏览器重绘回流.md)
 
 ## JS
 1. [从浏览器地址栏输入 url 到显示页面的步骤](./md/从浏览器地址栏输入%20url%20到显示页面的步骤.md)
