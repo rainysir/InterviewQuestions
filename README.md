@@ -48,6 +48,13 @@
    5. 原始类型和引用类型做比较时，引用类型会依照ToPrimitive规则转换为原始类型。
 9. [webpack优化](./md/webpack做过哪些优化.md)
 10. [Event Loop Node和浏览器差异](./md/EventLoop.md)
+11. ES5/ES6 的继承除了写法以外还有什么区别？
+    1.  class 声明会提升，但不会初始化赋值。（类似于 let、const 声明变量；
+    2.  class 声明内部会启用严格模式；
+    3.  class 的所有方法（包括静态方法和实例方法）都是不可枚举的；
+    4.  class 的所有方法（包括静态方法和实例方法）都没有原型对象 prototype，所以也没有 [[constructor]]，不能使用 new 来调用；
+    5.  必须使用 new 来调用 class；
+    6.  class 内部无法重写类名；
 12. React
     1.  [Fiber](./md/Fiber.md)
 13. Vue
