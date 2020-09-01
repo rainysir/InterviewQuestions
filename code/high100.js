@@ -1,9 +1,8 @@
-var a = function () {}
-function b() {
-  return a
-}
-var c = new b()
-console.log(c instanceof Function)
+console.log([1,2,3,4].reduce((...args) => {
+  debugger
+  console.log(args)
+  return a + b
+}, 1))
 /** 8
  * 打印结果
  */
