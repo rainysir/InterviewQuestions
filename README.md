@@ -56,9 +56,14 @@
     5.  必须使用 new 来调用 class；
     6.  class 内部无法重写类名；
 12. [Async/Await 的原理](./code/AsyncAwait.js)
-13. React
+13. 箭头函数与普通函数（function）的区别是什么？构造函数（function）可以使用 new 生成实例，那么箭头函数可以吗？为什么？
+    1.  函数体内的 this 对象，就是定义时所在的对象，而不是使用时所在的对象；
+    2.  不可以使用 arguments 对象，该对象在函数体内不存在。如果要用，可以用 rest 参数代替；
+    3.  不可以使用 yield 命令，因此箭头函数不能用作 Generator 函数；
+    4.  不可以使用 new 命令，因为：没有自己的 this，无法调用 call、apply；没有 prototype 属性，而 new 命令在执行时需要将钩子函数的 prototype 赋值给新的对象的 __proto__
+14. React
     1.  [Fiber](./md/Fiber.md)
-14. Vue
+15. Vue
     1.  vue name 作用
         1.  keep-alive 使用 name 做缓存过滤
         2.  递归组件用 name 调用自身
