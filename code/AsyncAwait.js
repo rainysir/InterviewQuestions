@@ -44,6 +44,6 @@ function myCo(it) {
 // console.log(a.next())
 // console.log(a.next())
 
-myCo(test()).then(res => {
-  console.log(res)
-})
+// myCo(test()).then(res => {
+//   console.log(res)
+// })
