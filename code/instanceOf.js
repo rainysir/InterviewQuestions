@@ -13,5 +13,6 @@ function instanceOf(a, b) {
 function A() {}
 const a = new A()
 
-console.log(a instanceof A)
-console.log(instanceOf(a, A))
+// console.log(a instanceof A)
+// console.log(instanceOf(a, A))
+console.log(this)

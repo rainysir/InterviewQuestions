@@ -78,9 +78,10 @@
     3.  未被清空的定时器；
     4.  未被销毁的事件监听；
     5.  DOM 引用；
-17. React
+17. [实现 new](./code/New.js)
+18. React
     1.  [Fiber](./md/Fiber.md)
-18. Vue
+19. Vue
     1.  vue name 作用
         1.  keep-alive 使用 name 做缓存过滤
         2.  递归组件用 name 调用自身
