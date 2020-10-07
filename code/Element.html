@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+
+<script>
+function Element({
+  tagName,
+  props,
+  children,
+}) {
+  if (!(this instanceof Element)) {
+    return new Element({
+      tagName,
+      props,
+      children,
+    })
+  }
+  this.tagName = tagName
+  this.props = props
+  this.children = children
+}
+
+Element.prototype.render = function() {
+  var el = document.createElement(this.tagName)
+
+  for (var attr in this.props) {
+    el.setAttribute(attr, this.props[attr])
+  }
+
+  this.children.forEach(child => {
+    var childEl = null
+    if (child instanceof Element) {
+      childEl = child.render()
+    } else {
+      childEl = document.createTextNode(child)
+    }
+    el.appendChild(childEl)
+  })
+
+  return el
+}
+
+var elem = Element({
+  tagName: 'ul',
+  props: {'class': 'list'},
+  children: [
+    Element({tagName: 'li', children: ['item1']}),
+    Element({tagName: 'li', children: ['item2']})
+  ]
+})
+
+document.querySelector('body').appendChild(elem.render())
+</script>
+</html>
