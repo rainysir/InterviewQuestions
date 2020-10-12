@@ -25,9 +25,10 @@ const tree = {
   }]
 }
 
+// DFS
 function findPath(tree, name) {
   const result = []
-  function bfs(node, root = '') {
+  function dfs(node, root = '') {
     if (node.name === name) {
       result.push(root)
     }
@@ -36,7 +37,27 @@ function findPath(tree, name) {
       node.children.forEach(item => bfs(item, `${root ? `${root},`: ''}${item.name}`))
     }
   }
-  bfs(tree, tree.name)
+  dfs(tree, tree.name)
+  return result
+}
+
+// BFS
+function findPath(tree, name) {
+  let queue = [tree]
+  const result = []
+  while (queue.length) {
+    const first = queue.shift()
+    if (name !== first.name) {
+      first.children && first.children.forEach(item => {
+        item.path = `${first.path || first.name}, ${item.name}`
+        queue.push(item)
+      })
+    } else {
+      result.push(first.path)
+      queue = []
+    }
+  }
+
   return result
 }
 
