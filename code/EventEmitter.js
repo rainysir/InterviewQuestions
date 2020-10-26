@@ -6,8 +6,8 @@ function Event() {
 }
 
 Event.prototype.on = function (type, handler) {
-  this_callbacks = this._callbacks || {};
-  this._callbacks[type] = this.callbacks[type] || [];
+  this._callbacks = this._callbacks || {};
+  this._callbacks[type] = this._callbacks[type] || [];
   this._callbacks[type].push(handler);
 
   return this;
@@ -47,3 +47,14 @@ Event.prototype.once = function (type, handler) {
   this.on(type, wrapper);
   return this;
 };
+
+
+const a = Event()
+
+a.on('console', function() {
+  console.log(1)
+})
+
+a.trigger('console')
+
+
